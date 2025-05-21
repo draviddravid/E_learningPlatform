@@ -1,0 +1,39 @@
+<app-navbar></app-navbar>
+
+<div class="entire">
+    <div class="assessment-container">
+        <div *ngIf="assessment">
+            <h2 class="assessment-heading">Let's Get Started with Your Assessment</h2>
+
+            <form (ngSubmit)="submitAssessment()" class="assessment-form">
+                <div *ngFor="let question of assessment.questions" class="question-block">
+                    <p class="question-text">{{ question.questionText }}</p>
+                    <div *ngFor="let option of question.options" class="option-block">
+                        <input
+                            type="radio"
+                            [name]="'question-' + question.questionId"
+                            [value]="option"
+                            (change)="onAnswerChange(question.questionId, option)"
+                            class="option-input"
+                        />
+                        <label class="option-label">{{ option }}</label>
+                    </div>
+                </div>
+
+                <button type="submit" class="submit-btn">Submit Assessment</button>
+            </form>
+
+            <div *ngIf="grade !== undefined" class="result">
+                <h3 class="result-heading">Your Grade: {{ grade }}</h3>
+            </div>
+
+            <div *ngIf="submissionSuccess" class="success-message">
+                <p class="success-text">Assessment submitted successfully!</p>
+            </div>
+        </div>
+
+        <div *ngIf="!assessment" class="loading-message">
+            <p>Loading assessment...</p>
+        </div>
+    </div>
+</div>

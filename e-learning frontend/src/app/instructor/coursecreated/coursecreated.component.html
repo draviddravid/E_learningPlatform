@@ -1,0 +1,22 @@
+<app-navbar></app-navbar>
+
+<div class="view-courses-background">
+  <div class="container mt-5 view-courses-container">
+    <h2 class="mb-4 view-courses-heading">Courses Created by {{ instructorName }}</h2>
+
+    <div *ngIf="courses.length > 0">
+      <ul class="list-group view-courses-list">
+        <li *ngFor="let course of courses" class="list-group-item view-courses-list-item d-flex justify-content-between align-items-center">
+          <span class="view-courses-course-info">{{ course.title }} - {{ course.description }}</span>
+          <div>
+            <button class="btn btn-danger btn-sm me-2 view-courses-delete-btn" (click)="deleteCourse(course.courseId)">Delete Course</button>
+            <button class="btn btn-primary btn-sm view-courses-assessment-btn" (click)="createAssessment(course.courseId)">Create Assessment</button>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div *ngIf="courses.length === 0" class="alert alert-warning view-courses-no-courses">
+      No courses found.
+    </div>
+  </div>
+</div>

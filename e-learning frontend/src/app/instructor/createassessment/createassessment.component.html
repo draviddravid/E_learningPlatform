@@ -1,0 +1,38 @@
+<app-navbar></app-navbar>
+
+<div class="create-assessment-background">
+  <div class="container create-assessment-container">
+    <h2 class="create-assessment-heading">Create Assessment</h2>
+
+    <form [formGroup]="assessmentForm" (ngSubmit)="onSubmit()">
+      <div class="form-group mb-3">
+        <label for="maxScore" class="create-assessment-label">Max Score</label>
+        <input id="maxScore" formControlName="maxScore" type="number" class="form-control create-assessment-input" required>
+      </div>
+
+      <div formArrayName="questions">
+        <div *ngFor="let question of questions.controls; let i = index" [formGroupName]="i" class="question-group">
+          <div class="form-group mb-3">
+            <label for="questionText" class="create-assessment-label">Question Text</label>
+            <input id="questionText" formControlName="questionText" type="text" class="form-control create-assessment-input" required>
+          </div>
+
+          <div class="form-group mb-3">
+            <label for="options" class="create-assessment-label">Options (comma separated)</label>
+            <input id="options" formControlName="options" type="text" class="form-control create-assessment-input" required>
+          </div>
+
+          <div class="form-group mb-3">
+            <label for="correctAns" class="create-assessment-label">Correct Answer</label>
+            <input id="correctAns" formControlName="correctAns" type="text" class="form-control create-assessment-input" required>
+          </div>
+
+          <button type="button" class="btn btn-danger create-assessment-remove-btn" (click)="removeQuestion(i)">Remove Question</button>
+        </div>
+      </div>
+
+      <button type="button" class="btn btn-secondary create-assessment-add-btn" (click)="addQuestion()">Add Question</button>
+      <button type="submit" class="btn btn-primary create-assessment-submit-btn">Create Assessment</button>
+    </form>
+  </div>
+</div>

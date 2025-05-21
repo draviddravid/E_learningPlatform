@@ -1,0 +1,74 @@
+/* view-courses.component.css */
+
+.view-courses-background {
+  background: linear-gradient(135deg, #e0f7fa, #b2ebf2);
+  min-height: 100vh;
+  padding-top: 60px; /* Adjust based on your navbar height */
+  padding-bottom: 50px;
+}
+
+.view-courses-container {
+  margin: 20px auto;
+  padding: 40px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  max-width: 800px; /* Adjust as needed */
+}
+
+.view-courses-heading {
+  color: #343a40;
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+
+.view-courses-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.view-courses-list-item {
+  background-color: #f9f9f9;
+  margin: 10px 0;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.view-courses-course-info {
+  font-size: 1rem;
+  color: #333;
+}
+
+.view-courses-delete-btn,
+.view-courses-assessment-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: opacity 0.3s ease;
+}
+
+.view-courses-delete-btn {
+  background-color: #dc3545;
+  color: white;
+}
+
+.view-courses-assessment-btn {
+  background-color: #007bff;
+  color: white;
+}
+
+.view-courses-delete-btn:hover,
+.view-courses-assessment-btn:hover {
+  opacity: 0.8;
+}
+
+.view-courses-no-courses {
+  text-align: center;
+  margin-top: 20px;
+}

@@ -1,0 +1,33 @@
+<app-navbar></app-navbar>
+
+<div class="create-course-background">
+  <div class="container mt-5 create-course-container">
+    <form [formGroup]="courseForm" (ngSubmit)="onSubmit()">
+      <div class="form-group mb-3">
+        <label for="title" class="create-course-label">Course Name</label>
+        <input id="title" formControlName="title" class="form-control create-course-input" />
+        <div *ngIf="courseForm.get('title')?.invalid && courseForm.get('title')?.touched" class="text-danger create-course-error">
+          Course Name is required.
+        </div>
+      </div>
+
+      <div class="form-group mb-3">
+        <label for="description" class="create-course-label">Course Description</label>
+        <textarea id="description" formControlName="description" class="form-control create-course-textarea"></textarea>
+        <div *ngIf="courseForm.get('description')?.invalid && courseForm.get('description')?.touched" class="text-danger create-course-error">
+          Course Description is required.
+        </div>
+      </div>
+
+      <div class="form-group mb-3">
+        <label for="contentURL" class="create-course-label">Course URL</label>
+        <input id="contentURL" formControlName="contentURL" class="form-control create-course-input" />
+        <div *ngIf="courseForm.get('contentURL')?.invalid && courseForm.get('contentURL')?.touched" class="text-danger create-course-error">
+          Valid URL is required.
+        </div>
+      </div>
+
+      <button type="submit" class="btn btn-primary w-100 create-course-button" [disabled]="courseForm.invalid">Submit</button>
+    </form>
+  </div>
+</div>

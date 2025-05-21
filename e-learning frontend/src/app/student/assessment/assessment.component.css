@@ -1,0 +1,63 @@
+.entire {
+    background: linear-gradient(135deg, #e0f7fa, #b2ebf2);
+    min-height: 100vh;
+    padding-top: 20px; /* Add padding to avoid overlap with the navbar */
+}
+
+.course-assessments-container {
+    margin: 20px auto;
+    padding: 40px;
+    background-color: #ffffff; /* White background */
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    max-width: 800px;
+}
+
+.course-assessments-heading {
+    color: #343a40;
+    margin-bottom: 2rem;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.assessments-list {
+    margin-top: 20px;
+}
+
+.assessment-item {
+    background-color: #f9f9f9;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+.assessment-title {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.take-assessment-btn {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: opacity 0.3s ease;
+    background-color: #007bff;
+    color: white;
+    font-weight: 600;
+}
+
+.take-assessment-btn:hover {
+    opacity: 0.8;
+}
+
+.no-assessments-message {
+    text-align: center;
+    margin-top: 20px;
+    color: #777;
+    font-size: 1rem;
+}

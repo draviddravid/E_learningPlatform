@@ -1,0 +1,81 @@
+/* create-assessment.component.css */
+
+.create-assessment-background {
+  background: linear-gradient(135deg, #e0f7fa, #b2ebf2);
+  min-height: 100vh;
+  padding-top: 60px;
+  padding-bottom: 50px;
+}
+
+.create-assessment-container {
+  margin: 20px auto;
+  padding: 40px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  max-width: 800px;
+}
+
+.create-assessment-heading {
+  color: #343a40;
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+
+.create-assessment-label {
+  color: #495057;
+  font-weight: 500;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.create-assessment-input {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.create-assessment-input:focus {
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.question-group {
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.btn {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: opacity 0.3s ease;
+  margin-top: 10px;
+}
+
+.create-assessment-remove-btn {
+  background-color: #dc3545;
+  color: white;
+}
+
+.create-assessment-submit-btn {
+  background-color: #007bff;
+  color: white;
+}
+
+.create-assessment-add-btn {
+  background-color: #6c757d;
+  color: white;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}

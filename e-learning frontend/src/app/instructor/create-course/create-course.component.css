@@ -1,0 +1,63 @@
+/* create-course.component.css */
+
+.create-course-background {
+  background: linear-gradient(135deg, #e0f7fa, #b2ebf2);
+  min-height: 100vh;
+  padding-top: 60px; /* Adjust based on your navbar height */
+  padding-bottom: 50px;
+}
+
+.create-course-container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 40px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.create-course-label {
+  color: #495057;
+  font-weight: 500;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.create-course-input,
+.create-course-textarea {
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+  padding: 12px 15px;
+  width: 100%;
+  font-size: 1rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.create-course-input:focus,
+.create-course-textarea:focus {
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.create-course-error {
+  color: #dc3545;
+  font-size: 0.875rem;
+  display: block;
+  margin-top: 5px;
+}
+
+.create-course-button {
+  background-color: #007bff;
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.create-course-button:hover {
+  background-color: #0056b3;
+}

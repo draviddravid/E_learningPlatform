@@ -1,0 +1,18 @@
+<app-navbar></app-navbar>
+
+<div class="entire">
+    <div class="course-assessments-container">
+        <div *ngIf="course">
+            <h2 class="course-assessments-heading">Assessments for {{ course.title }}</h2>
+            <div *ngIf="assessments.length > 0; else noAssessments" class="assessments-list">
+                <div *ngFor="let assessment of assessments" class="assessment-item">
+                    <p class="assessment-title">{{ assessment.title }}</p>
+                    <button class="take-assessment-btn" (click)="takeAssessment(assessment)">Take Assessment</button>
+                </div>
+            </div>
+            <ng-template #noAssessments>
+                <p class="no-assessments-message">No assessments available for this course.</p>
+            </ng-template>
+        </div>
+    </div>
+</div>

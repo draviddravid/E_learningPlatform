@@ -1,0 +1,21 @@
+<app-navbar></app-navbar>
+
+<div class="instructor-dashboard-background">
+  <div class="container mt-5 instructor-dashboard-container">
+    <div class="row">
+      <div class="col-md-8">
+        <h2 class="instructor-dashboard-heading">Hello, {{ instructorName }}</h2>
+        <div class="course-actions mt-4">
+          <div class="action mb-3">
+            <p class="instructor-dashboard-action-text">Create Course</p>
+            <button class="btn btn-success instructor-dashboard-button" (click)="createCourse()">Create Course</button>
+          </div>
+          <div class="action mb-3">
+            <p class="instructor-dashboard-action-text">View My Courses</p>
+            <button class="btn btn-primary instructor-dashboard-button" (click)="viewCreatedCourses()">View My Courses</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
