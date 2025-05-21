@@ -1,0 +1,23 @@
+/* Add to your global styles or a specific component CSS file */
+
+.custom-navbar {
+  background: linear-gradient(135deg, #343a40, #212529); /* Darker gradient for navbar */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add subtle shadow */
+}
+
+.navbar-brand {
+  font-size: 24px;
+  font-weight: bold;
+  color: #e0f7fa; /* Light text color to match theme */
+}
+
+.custom-logout-btn {
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 8px; /* Rounded corners */
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.custom-logout-btn:hover {
+  background-color: #c82333; /* Slightly darker red on hover */
+}

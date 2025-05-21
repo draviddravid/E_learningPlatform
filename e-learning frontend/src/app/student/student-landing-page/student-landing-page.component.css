@@ -1,0 +1,42 @@
+/* student-dashboard.component.css */
+
+.student-dashboard-background {
+  background: linear-gradient(135deg, #e0f7fa, #b2ebf2);
+  min-height: 100vh;
+  padding-top: 60px; /* Adjust based on your navbar height */
+  padding-bottom: 50px;
+}
+
+.student-dashboard-container {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.student-dashboard-heading {
+  color: #343a40;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.student-dashboard-button {
+  font-size: 1.2rem;
+  padding: 18px 48px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.student-dashboard-button.btn-info {
+  background-color: #17a2b8;
+  color: white;
+}
+
+.student-dashboard-button.btn-info:hover {
+  background-color: #138496;
+}

@@ -1,0 +1,20 @@
+<app-navbar></app-navbar>
+<div class="entire"> 
+<div class="enrolled-courses-container">
+  <h2 class="enrolled-courses-heading">Enrolled Courses</h2>
+
+  <div *ngIf="enrolledCourses.length > 0; else noCourses">
+    <ul class="enrolled-courses-list">
+      <li *ngFor="let course of enrolledCourses" class="enrolled-courses-list-item">
+        <h3 class="enrolled-courses-title">{{ course.title }}</h3>
+        <p class="enrolled-courses-description">{{ course.description }}</p>
+        <button class="enrolled-courses-assessment-btn" (click)="takeAssessment(course)">Go to Assessment Page</button>
+      </li>
+    </ul>
+  </div>
+
+  <ng-template #noCourses>
+    <p class="enrolled-courses-no-courses">No enrolled courses available.</p>
+  </ng-template>
+</div>
+</div>

@@ -1,0 +1,68 @@
+/* enrolled-courses.component.css */
+
+.enrolled-courses-container {
+    margin: 20px auto;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    max-width: 800px;
+    /* background: linear-gradient(135deg, #e0f7fa, #b2ebf2); */
+  }
+  
+  .enrolled-courses-heading {
+    color: #343a40;
+    margin-bottom: 2rem;
+    font-weight: 600;
+  }
+  
+  .enrolled-courses-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .enrolled-courses-list-item {
+    background-color: #f9f9f9;
+    margin: 10px 0;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+  
+  .enrolled-courses-title {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .enrolled-courses-description {
+    color: #555;
+    margin-bottom: 15px;
+  }
+  
+  .enrolled-courses-assessment-btn {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: opacity 0.3s ease;
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .enrolled-courses-assessment-btn:hover {
+    opacity: 0.8;
+  }
+  
+  .enrolled-courses-no-courses {
+    text-align: center;
+    margin-top: 20px;
+    color: #777;
+  }
+
+  .entire {
+    background: linear-gradient(135deg, #e0f7fa, #b2ebf2);
+    min-height: 100vh; /* Ensure it covers the full height */
+    padding-top: 20px; /* Add padding to avoid overlap with the navbar */
+}
